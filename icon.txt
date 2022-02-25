@@ -1,0 +1,7 @@
+icon list
+<i class="fa-solid fa-location-dot">
+<i class="fa-solid fa-money-bill-wave"></i>
+<i class="fas fa-child"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-dog"></i>
+<i class="fas fa-search"></i>
