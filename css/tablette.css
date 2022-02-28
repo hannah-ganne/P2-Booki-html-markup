@@ -1,5 +1,51 @@
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .block_cards {
     flex-direction: column;
+  }
+
+  .hebergement {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  .popular {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    order: -1;
+  }
+
+  .popular .title {
+    justify-content: flex-start;
+  }
+
+  .popular ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card--horizontal {
+    width: 180px;
+    height: 120px;
+  }
+
+  .card__image--horizontal {
+    height: 120px;
+  }
+
+  .title span {
+    margin-left: 10px;
+  }
+
+  .activity ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .activity ul li {
+    width: 45%;
+    margin: 0 2%;
   }
 }

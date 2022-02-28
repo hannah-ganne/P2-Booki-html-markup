@@ -5,3 +5,4 @@ icon list
 <i class="fas fa-heart"></i>
 <i class="fas fa-dog"></i>
 <i class="fas fa-search"></i>
+<i class="fas fa-star"></i>
