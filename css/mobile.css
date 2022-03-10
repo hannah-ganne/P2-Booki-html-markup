@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   body {
     margin: 0;
   }
@@ -48,8 +48,8 @@
   }
 
   /* Main */
+
   main {
-    margin: 0;
     padding: 0;
   }
 
@@ -71,11 +71,11 @@
     position: relative;
   }
 
-  .search__bar #text {
+  #text {
     display: none;
   }
 
-  .search__bar #icon {
+  #icon {
     display: inline-block;
     padding: 10px;
     margin: 0;
@@ -88,102 +88,59 @@
     left: -8px;
   }
 
+  #icon:hover {
+    cursor: pointer;
+  }
+
   .search__bar #icon i {
     color: white;
   }
 
   /* Filters */
 
-  .search__filter {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .search__filter > span {
     margin: 0;
-    font-size: 18px;
   }
-
-  /* Cards */
 
   .block_hotels {
-    flex-direction: column-reverse;
-    width: 100%;
     margin: 0;
   }
 
-  /* Accomodation */
-
-  .accommodation {
-    width: 100%;
-    max-height: 100%;
-    margin: 0;
-    padding: 20px;
-    background-color: transparent;
-  }
-
-  .accommodation ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .accommodation li {
-    width: 100%;
-  }
-
-  .card--basic {
-    width: 100%;
-    height: 195px;
-  }
-
-  .card__image--basic {
-    width: 100%;
-    height: 195px;
-  }
-
-  .card__description--basic {
-    height: 45px;
-  }
-
-  #loadMore {
-    margin: 20px 10px;
-    font-size: 18px;
-  }
-
-  /* Popular accommodation */
-
+  /* Popular */
   .popular {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
     border-radius: 0;
   }
 
-  .popular ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .popular .title {
+    justify-content: space-between;
   }
 
-  .popular ul li {
+  .popular ul {
+    flex-direction: column;
+  }
+
+  .popular li {
     width: 100%;
   }
 
-  .card--horizontal {
-    height: 125px;
+  /* Accommodation */
+
+  .accommodation {
+    background-color: transparent;
   }
 
-  .card__image--horizontal {
-    height: 125px;
+  .accommodation ul {
+    flex-direction: column;
   }
 
-  .card__description {
-    height: 120px;
+  .accommodation li {
+    width: 100%;
   }
 
-  /* Activities */
+  /* Activity */
 
   .activity {
     padding: 20px;
@@ -200,13 +157,6 @@
     width: 100%;
   }
 
-  .card_stack {
-    margin-left: 0;
-  }
-
-  .activity__card {
-    width: 100%;
-  }
   .activity__card--vertical {
     height: 180px;
   }

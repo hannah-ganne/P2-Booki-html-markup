@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/tablette.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/820aec7e0e.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
@@ -17,12 +18,12 @@
     <!-- header -->
     <header>
         <div class="logo">
-            <img src="images/Booki.png" alt="logo of Booki">
+            <a href="#"><img src="images/Booki.png" alt="logo of Booki"></a>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <li><a href="#accommodation">Hébergements</a></li>
+                <li><a href="#activity">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -34,12 +35,12 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <span>En plein centre ville ou en pleine nature</span>
             </div>
-            <div class="search__bar">
-                <div><i class="fa-solid fa-location-dot"></i></div>
-                <input type="text" value="Marseille, France">
+            <form class="search__bar">
+                <div><i class="fas fa-map-marker-alt"></i></div>
+                <input type="text" placeholder="Marseille, France">
                 <button id="text">Rechercher</button>
                 <button id="icon"><i class="fas fa-search"></i></button>
-            </div>
+            </form>
 
         <!-- Filters -->
             <div class="search__filter">
@@ -48,7 +49,7 @@
                     <li>
                         <div class="filter">
                             <div class="filter__icon">
-                                <i class="fa-solid fa-money-bill-wave --text-center"></i>
+                                <i class="fas fa-money-bill-wave"></i>
                             </div>
                             <div class="filter__name">Économique</div>
                         </div>
@@ -56,7 +57,7 @@
                     <li>
                         <div class="filter">
                             <div class="filter__icon">
-                                <i class="fas fa-child --text-center"></i>
+                                <i class="fas fa-child"></i>
                             </div>
                             <div class="filter__name">Familial</div>
                         </div>
@@ -64,7 +65,7 @@
                     <li>
                         <div class="filter">
                             <div class="filter__icon">
-                                <i class="fas fa-heart --text-center"></i>
+                                <i class="fas fa-heart"></i>
                             </div>
                             <span class="filter__name">Romantique</span>
                         </div>
@@ -72,7 +73,7 @@
                     <li>
                         <div class="filter">
                             <div class="filter__icon">
-                                <i class="fas fa-dog --text-center"></i>
+                                <i class="fas fa-dog"></i>
                             </div>
                             <div class="filter__name">Animaux autorisés</div>
                         </div>
@@ -87,7 +88,7 @@
         <div class="block_hotels">
 
         <!-- Accommodation -->
-        <article class="accommodation">
+        <article class="accommodation" id="accommodation">
             <h2>Hébergements à Marseille</h2>
             <ul>
                 <li>
@@ -100,10 +101,10 @@
                                 <h3>Auberge La Cannebière</h3>
                                 <p>Nuit à partir de 25€</p>
                                 <div class="star">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
                             </div>
@@ -120,11 +121,11 @@
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52€</p>
                                 <div class="star">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
                                 </div>
                             </div>
                         </div>
@@ -140,10 +141,10 @@
                                 <h3>Hôtel Les mouettes</h3>
                                 <p>Nuit à partir de 76€</p>
                                 <div class="star">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
                             </div>
@@ -160,9 +161,9 @@
                                 <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46€</p>
                                 <div class="star">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
@@ -180,10 +181,10 @@
                                 <h3>Auberge Le Panier</h3>
                                 <p>Nuit à partir de 23€</p>
                                 <div class="star">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
                             </div>
@@ -200,11 +201,11 @@
                                 <h3>Hôtel chez Amina</h3>
                                 <p>Nuit à partir de 96€</p>
                                 <div class="star">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
                                 </div>
                             </div>
                         </div>
@@ -233,11 +234,11 @@
                                     <p>Nuit à partir de 128€</p>
                                 </div>
                                 <div class="star">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
                                 </div>
                             </div>
                         </div>
@@ -255,10 +256,10 @@
                                     <p>Nuit à partir de 71€</p>
                                 </div>
                                 <div class="star">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
                             </div>
@@ -277,10 +278,10 @@
                                     <p>Nuit à partir de 68€</p>
                                 </div>
                                 <div class="star">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
+                                    <i class="fas fa-star rated"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
                             </div>
@@ -292,7 +293,7 @@
         </div>
 
         <!-- Activities -->
-        <article class="activity">
+        <article class="activity" id="activity">
             <h2>Activités à Marseille</h2>
             <ul>
                 <li>
